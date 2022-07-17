@@ -1,0 +1,44 @@
+
+/* Combinador de hermano adyacente */
+.subtitulo + .parrafo{
+
+    background-color: yellow;
+    opacity: 0;
+    transition: 1s;
+    }
+    
+    .parrafo{
+        background-color: red;
+    }
+    
+    /* Animacion pal hermano adyacente */
+    .subtitulo:hover + .parrafo{
+     opacity:1;
+    }
+
+    /* --------------OTRO EJEMPLO------------------ */
+   /* .subtitulo + .parrafo{
+
+        background-color: yellow;
+        height:0;
+        overflow: hidden;
+        transition: 1s;
+        }
+        
+        .parrafo{
+        background-color: red;
+        }
+        
+        .subtitulo:hover + .parrafo{
+         opacity:1;
+        height:50px;
+        }
+    */
+
+    [value]{
+        display:block;
+        width: 90%;
+    }
+    [type="password"]{
+        background-color:yellow;
+    }
