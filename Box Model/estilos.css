@@ -1,0 +1,47 @@
+/* (Margin, Padding, Border, Display Block Inline Inline-block, Width y Height) */
+
+body{
+    font-family: Georgia;
+}
+
+/* Capa de contenido */
+
+.card{
+    background-color: royalblue;
+    color: white;
+    /* No va tomar el width porque el max-widht tiene más PESO */
+    width:200px;
+    /* Ancho maximo, ya no va a seguir creciendo XD */
+    max-width: 300px;
+    /* Ancho minimo de un elemento  */
+    min-width: 200px;
+
+    /* Por defcto el Height es AUTOMATICO */
+    height:200px;
+    /* OVERFLOW: HIDDEN OCULTA LA PARTE QUE SE DESBORDA DEL ATRIBUTO */
+    overflow: auto;
+
+    /* ARRIBA , DERECHA, ABAJO, IZQUIERDA*/
+    padding:50px;
+    /*PONE UN SCROLL A LA PARTE QUE SE DESBORDA*/
+    /* overflow:scroll; */
+
+    /**/
+    /* border: 3px solid; El color lo toma del texto, SI ESTA EN BLANCO NO LO VERAS!*/
+    border: 15px #000 solid;
+    /*
+    border-width: 20px 30px 20px 30px;
+    border-style: solid;
+    border-color: aqua;
+    */
+
+   /* border-style: double;  dotted, dashed, double, groove, ridge|| puntos , lineas, lineas dobles, estilo 3D sombreado pa dentro, 3D sombreado pa fuera*/
+   border-top-style: dotted;
+
+   border-color: yellow black blue red;
+
+}
+
+.card--one{
+    margin:50px 10px 30px;
+}

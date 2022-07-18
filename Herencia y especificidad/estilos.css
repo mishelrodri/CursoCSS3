@@ -1,0 +1,15 @@
+/* Cpacidad de que los padres (contenedores) le hereden a sus hijos */
+body{
+    border: 3px solid orange;
+    font-family: black;
+    color: steelblue;
+}
+
+h1{
+    /* color: black; */
+    color: inherit; /* LA PROPIEDAD HEREDA EL COLOR DEL PADRE */
+}
+
+input{
+    font-size: 25px;
+}

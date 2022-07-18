@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.nav{
+    background-color: #264DE4;
+    padding: 0 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:70px;
+}
+
+.nav__logo{
+    width:50px;
+    height: 100%;
+}
+
+/* Los enlaces no toman el color por Herencia */
+
+.nav__link{
+color: inherit;
+/* Quitar decoracion de los links */
+text-decoration: none;
+margin-left: 20px;
+}
+
+.nav__link--active{
+    border-bottom: 2px solid white;
+}
