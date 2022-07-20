@@ -1,5 +1,10 @@
 /* (Margin, Padding, Border, Display Block Inline Inline-block, Width y Height) */
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
     font-family: Georgia;
 }
@@ -44,4 +49,41 @@ body{
 
 .card--one{
     margin:50px 10px 30px;
+}
+
+
+
+
+/*Coplapso de margenes*/
+.main{
+    background: steelblue;
+    color:white;
+    /*Los margenes como son adyacentes(hermanos se FUCIONAN) y predomina el margen con mayor valor*/
+
+    margin-bottom: 100px;
+
+/*PARA EVITAR QUE EL MARGEN DEL PAPA E HIJO SE TOQUEN*/
+    padding:0.1px; /*border: 0.1pz solid transparent;*/
+}
+
+/*Empuja al papa y no al hijo Pasa con el primer y ultimo elemento (HIJO- COLAPSO DE HIJOS)*/
+
+.main__title{
+    margin-top: 50px;;
+}
+
+
+.footer{
+    background-color: slateblue;
+    color: white;
+    margin-bottom: 50px; /*Nolo toma*/
+}
+
+/*----VIENDO PROPIEDAD BOX SIZING PARA QUE NO SE DESBORDE DEL WIDTH*/
+.card{
+    box-sizing: border-box; /*Por default: content-box*/
+    width:200px;
+    height:200px;
+    padding:45px;
+    border: 5px solid chocolate;
 }
