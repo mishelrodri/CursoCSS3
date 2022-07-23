@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background-color: #F7996E;
+}
+
+.img{
+    width: 250px;
+    height:350px;
+    object-fit: cover;
+    margin: 50px;
+
+    /*redondear las esquinas*/
+    border-radius: 100p 10pxx;
+/*
+    border-radius: top-left | top right | bottom right | bottom left;
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border-radius: 10px 20px 10px 20px;
+
+    */
+
+
+
+    /* box-shadow: offset-x offset-y blur(difuminado) spread(esparcimineto-ampliacion) color; */
+    /*El color de la forma por defecto se toma del la propiedad color*/
+    /*PODEMOS DEFINIR VARIAS SOMBRAS PONIENDO UNA COMAAA!!*/
+    box-shadow: 100px 0 20px 0 steelblue ; /*-100px 0;*/
+
+}
+
+
+.notebook{
+    width: 300px;
+    height: 400px;
+    background-color: #7765B5;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #fff, 20px 20px rgba(0,0,0, 0.13);
+    /* por el computado de margenes VAMOS A PONER UN PEQUELÑO PADDING YA QUE NO NOS DEJA AGREGAR UN MARGIN ABAJO JE */
+    padding-top: .1px;
+}
+
+.circle{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    color: white;/*ya que por defecto agarra el del padre*/
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left:7px;
+    box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px,0 280px, 0 320px;
+    /* position: relative; */
+    padding-top: .1px;
+}
+
+.line{
+   /* position: absolute;
+    top: 50%;
+    left: -20px;*/
+    margin-top: 4px;
+    margin-left: -20px;
+    background-color: #319073;
+    color: #319073;
+    width: 30px;
+    height: 8px;
+    border-radius: 10px;
+    box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px, 0 240px,0 280px, 0 320px;
+}
