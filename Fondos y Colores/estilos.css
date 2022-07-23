@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+/*
+.container{
+    padding:70px;
+}
+*/
+
+.container{
+    background-color: magenta;
+    width: 90%;
+    height: 500px;
+    margin:50px auto;
+    background-image: url('spideybaby.png');
+    /* Para que la imagen no se repota */
+    background-repeat: no-repeat; /*repeat-x | repeat-y*/
+    background-position: center; /* Horizontal-Vertical top| top left | top right | bottom right | bottom left | center*/
+    background-size: contain;/*(ancho/alto | cover-se estira | contain-la ajusta corectamente )*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 89, 255, 0.226)), url('spideybaby.png');
+}
+
+.title{
+    font-size: 42px;
+    /* color: tomato; */
+    color: #ff0033;
+    color: rgb(255,255,255); /*0 - 255*/
+    /* color: hsl(Tono, saturation, lightness); */
+    text-align: center;
+    padding: 200px;
+}
