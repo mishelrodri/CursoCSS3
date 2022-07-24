@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    font-family: Arial;
+    /* min-height: 1000px; */
+    /* background-color: #667543; */
+}
+
+.container{
+    /* padding:40px; */
+    width:300px;
+    background-color: blue;
+    font-size: 10px;
+    /*width:100vw;
+    height: 100vh;*/
+    background-color: red;
+}
+
+.container-child{
+    /* font-size: 15px; */
+    background-color: purple;
+    width: 50%;
+}
+
+.title{
+    font-size: 3rem; /* 3em * 10px = 30px*/
+    width: 5em; /*5*30 = 150px */
+    /* background-color: yellow; */
+}
