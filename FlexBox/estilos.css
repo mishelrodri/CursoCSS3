@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Arial';
+}
+
+.container{
+    width: 90%;
+    max-width: 800px;
+    min-height: 600px;
+    margin: 80px auto;
+    border:3px solid #000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    /* Para que alinea el texto verticalmente */
+    line-height: 100px;
+
+    /* AL CONTENEDOR */
+
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+    
+    /*  ALINEACION */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.element{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+    /* background-color: salmon; */
+    width: 500px;
+    height:100px;
+}
+
+.element1{
+    background-color: crimson;
+}
+
+.element2{
+    background-color: purple;
+    /* font-size: 50px; */
+}
+.element3{
+    background-color: steelblue;
+}

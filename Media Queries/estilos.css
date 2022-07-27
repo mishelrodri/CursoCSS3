@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+.img{
+    margin:50px auto;
+    display: block;
+}
+
+@media ( max-width:700px ){
+    body{
+        background-color: blue;
+    }
+}
