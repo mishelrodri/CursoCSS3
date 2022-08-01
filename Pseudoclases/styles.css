@@ -109,7 +109,7 @@ CUANDO PASA EL MOUSE
 
 
 .validacion + .message::after{
-    content: "Aun no escribes nada";
+    content: "Felicidades por escribir";
     display: block;
     background-color: green;
     padding:1em;
