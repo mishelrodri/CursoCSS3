@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+.container{
+    border: 1px solid ; 
+}
+
+.element{
+    margin: 60px;
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+
+    /* En ANIMACIONES -  TRANSICIONES por el rendimiento (mejor que postion) */
+
+    /* transform: translate(100px, 100px); */
+    /* transform: rotate(2turn); */
+
+    /* escala o decrementa un valor VALORES ENTEROS 
+    transform: scaleX(3) scaleY(2);
+    transform: scale(2,1);
+    transform-origin: left top;*/
+    
+    /* transform: rotate(); */
+    /*
+    0-360 deg
+    0-400 grad
+    0-6.28319
+    0-1 turn*/
+
+    transition: .3s;
+}
+
+/* PARA QUE ESTA FUNCIONE TENEMOS QUE PONERN UN CONTAINER */
+.element:hover{
+    /* transform: skewX(10deg) skewY(30deg) rotate(80deg); */
+
+    /* EL ORDEN DE LOS METODOS SI ALTERA EL RESULTADO */
+    transform: translate(100%, 100%) scale(1.3) rotate(80deg);
+    
+}
