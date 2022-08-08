@@ -33,6 +33,7 @@ body{
     padding:80px 0;
     width: 90%;
     margin:0 auto;
+    max-width: 1200px;
 }
 
 .hero{
@@ -47,6 +48,10 @@ body{
     align-items: center;
     grid-template-columns: repeat(2,max-content);
     justify-content: space-between;
+}
+
+.nav__links{
+    display: none;
 }
 
 .hero__main{
@@ -226,4 +231,128 @@ text-align: center;
 }
 .gallery__image:nth-of-type(4){
     background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+}
+
+.footer{
+    background-color: #90D4C5;
+    text-align: center;
+}
+
+.footer__logo{
+    width: 200px;
+}
+
+.footer__nav{
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link{
+    color: var(--dark-moderate-cyan);
+    text-decoration:none;
+    padding: 1.5rem 0 3rem;
+}
+
+.footer__social{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns:max-content;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media (min-width:768px){
+
+    
+    .hero{
+        background-image: url('../images/desktop/image-header.jpg');
+    }
+
+    .nav__hamburguer{
+        display: none;
+    }
+    
+    .nav__links{
+     display: grid;
+     grid-auto-flow: column;
+     gap: 1.2rem;
+     align-items: center;
+    }
+
+    .nav__link{
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    .nav__link--cta{
+        color: var(--dark-blue);
+        background-color: var(--white);
+        padding: 1em 1.5em;
+        border-radius:2em;
+        font-family: var(--font1);
+    }
+
+ 
+.services{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "text1 img1"
+    "img2 text2"
+    ;
+    /* background-color: #000; */
+}
+
+.services__image{
+    background-image: url('../images/desktop/image-transform.jpg');
+    grid-area: img1;
+}
+
+.services__texts{
+  text-align: start;
+  grid-area: text1;
+  padding: 2rem 3rem;
+}
+
+.services__texts--2{
+    grid-area: text2;
+}
+
+.services__image--2{
+    background-image: url('../images/desktop/image-stand-out.jpg');
+    grid-area: img2;
+}
+
+.jobs{
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: 500px;
+}
+
+.jobs__section{
+  
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+
+}
+
+.jobs__section--second{
+    color: var(--dark-blue);
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+
+.jobs__name{
+    font-family: var(--font1);
+    font-family: 1.7rem;
+}
+
+.jobs__paragraph{
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
 }
