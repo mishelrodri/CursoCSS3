@@ -51,7 +51,57 @@ body{
 }
 
 .nav__links{
-    display: none;
+    /* display: none; */
+    position: fixed;/*le ponemos el fixed para evitar que se mueva*/
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    background-color: #fff;
+
+    display: grid;
+    gap: 1em;
+
+    /* EL ELEMENTO SIGUE ESTAN AHI PERO SIN QUE SE VEA Y LOS EVENTOS DE LOS LINKS ES QUITADO PARA QUE NO HAGA INTEFERENCIA */
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s opacity;
+
+}
+
+.nav__links:target{
+/* transition: .3s opacity; */
+opacity: 1;
+pointer-events: unset;
+}
+
+.nav__link{
+    justify-self: center;
+    text-decoration: none;
+    color: var(--very-dark-grayish-blue);
+}
+
+.nav__link--cta{
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    font-family: var(--font1);
+}
+
+.nav__link::before{
+    content: "";
+    position: absolute;
+    /* width: 30px;
+    height: 30px; */
+    border-top:10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    top: -20px;
+    right: 0;
 }
 
 .hero__main{
@@ -196,7 +246,7 @@ text-align: center;
 .testimonials__paragraph{
     color: var(--dark-blue);
     line-height: 1.5;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .testimonials__name{
@@ -277,10 +327,21 @@ text-align: center;
     }
     
     .nav__links{
+    position: unset;
+    width: unset;
+    margin: unset;
+    opacity: 1;
+    background-color: unset;
+    pointer-events: unset;
      display: grid;
      grid-auto-flow: column;
      gap: 1.2rem;
      align-items: center;
+    }
+
+    .anv__links:target{
+        pointer-events: unset;
+        opacity: 1;
     }
 
     .nav__link{
@@ -291,9 +352,9 @@ text-align: center;
     .nav__link--cta{
         color: var(--dark-blue);
         background-color: var(--white);
-        padding: 1em 1.5em;
+        /* padding: 1em 1.5em;
         border-radius:2em;
-        font-family: var(--font1);
+        font-family: var(--font1); */
     }
 
  
@@ -345,14 +406,43 @@ text-align: center;
     background-image: url('../images/desktop/image-photography.jpg');
 }
 
-.jobs__name{
-    font-family: var(--font1);
-    font-family: 1.7rem;
+
+.testimonials__container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
 
-.jobs__paragraph{
+.testimonials__paragraph{
+    color: var(--dark-blue);
     line-height: 1.5;
-    margin-top: 1rem;
+    margin: 2.5rem 0;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 350px;
+}
+
+.gallery__image{
+    aspect-ratio: unset;
+    background-image: url('../images/mobile/image-gallery-milkbottles.jpg');   
+}
+
+.gallery__image:nth-of-type(2){
+    background-image: url('../images/desktop/image-gallery-orange.jpg');
+}
+
+.gallery__image:nth-of-type(3){
+    background-image: url('../images/desktop/image-gallery-cone.jpg');
+}
+.gallery__image:nth-of-type(4){
+    background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+}
+
+.footer__link{
+    padding: 2rem 0 5rem;
 }
 
 }
