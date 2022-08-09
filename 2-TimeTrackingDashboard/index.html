@@ -7,74 +7,145 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
+ 
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <main class="card">
 
-  Daily
-  Weekly
-  Monthly
+    <section class="card__main">
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+     <div class="card__header">
+      <img src="images/image-jeremy.png" alt="jeremy" class="card__img">
+      <div class="card__info">
+        <p class="card__description">Report for</p>
+      <h2 class="card__name">Jeremy Robson</h2>
+      </div>
+     </div>
+        <nav class="nav__links">
+          <a href="#" class="nav__link">Daily</a>
+          <a href="#" class="nav__link  nav__link--cta">Weekly</a>
+          <a href="#" class="nav__link">Monthly</a>
+        </nav>
+     
+    </section>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <!-- CARD WORK -->
+    <section class="card__fact card__fact-1">
+      <div class="card__details">
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div>
+        <h3 class="card__title">Work</h3>
+        <p class="card__hours">32hrs</p>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+        <div class="card__time">
+          <!-- <div class="elipses"></div> -->
+          <img src="images/icon-ellipsis.svg"  class="elipses">
+        <p class="card__week">Last Week - 36hrs</p>
+        </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    </section>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+    <!-- CARD PLAY -->
+    <section class="card__fact card__fact-2">
+      <div class="card__details">
+
+      <div>
+        <h3 class="card__title">Play</h3>
+        <p class="card__hours">10hrs</p>
+      </div>
+
+        <div class="card__time">
+          <!-- <div class="elipses"></div> -->
+          <img src="images/icon-ellipsis.svg"  class="elipses">
+        <p class="card__week">Last Week - 8hrs</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CARD STUDY -->
+    <section class="card__fact card__fact-3">
+      <div class="card__details">
+
+      <div>
+        <h3 class="card__title">Study</h3>
+        <p class="card__hours">4hrs</p>
+      </div>
+
+        <div class="card__time">
+          <!-- <div class="elipses"></div> -->
+          <img src="images/icon-ellipsis.svg"  class="elipses">
+        <p class="card__week">Last Week - 7hrs</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CARD Excercise -->
+    <section class="card__fact card__fact-4">
+      <div class="card__details">
+
+      <div>
+        <h3 class="card__title">Excercise</h3>
+        <p class="card__hours">4hrs</p>
+      </div>
+
+        <div class="card__time">
+          <!-- <div class="elipses"></div> -->
+          <img src="images/icon-ellipsis.svg"  class="elipses">
+        <p class="card__week">Last Week - 5hrs</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CARD SOCIAL -->
+    <section class="card__fact card__fact-5">
+      <div class="card__details">
+
+      <div>
+        <h3 class="card__title">Social</h3>
+        <p class="card__hours">5hrs</p>
+      </div>
+
+        <div class="card__time">
+          <!-- <div class="elipses"></div> -->
+          <img src="images/icon-ellipsis.svg"  class="elipses">
+        <p class="card__week">Last Week - 10hrs</p>
+        </div>
+
+      </div>
+
+    </section>
+<!-- CARD SELF CARE -->
+<section class="card__fact card__fact-6">
+  <div class="card__details">
+
+  <div>
+    <h3 class="card__title">Self Care</h3>
+    <p class="card__hours">2hrs</p>
   </div>
+
+    <div class="card__time">
+      <!-- <div class="elipses"></div> -->
+      <img src="images/icon-ellipsis.svg"  class="elipses">
+    <p class="card__week">Last Week - 2hrs</p>
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
 </body>
 </html>
