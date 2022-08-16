@@ -177,7 +177,24 @@ color: var(--very-dark-desaturated-blue);
     border-radius: 0 100px 0 100px;
 }
 
-.section__texts{
+.section--infrastucture .section__texts{
     margin-top: 100px;
     padding: 40px 40px 100px;
+}
+
+.section--simple .section__img{
+    margin-top: 100px;
+}
+
+.section--simple .section__texts{
+    margin-top: 0px;
+}
+
+.section__img--3{
+    background-image: url('../images/illustration-laptop-mobile.svg');
+}
+
+.footer{
+    background-color: var(--very-dark-black-blue);
+    padding: 40px;
 }
